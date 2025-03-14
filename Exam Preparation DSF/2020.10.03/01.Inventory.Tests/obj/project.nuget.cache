@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jDOaNZIhWPw=",
+  "dgSpecHash": "N2o1khD6aKM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Georgi Markov\\Documents\\GitHub\\Old\\CSharp-Data-Structures-Fundamentals\\Exam Preparation DSF\\Exam - 03 Oct 2020\\01.Inventory.Tests\\01.Inventory.Tests.csproj",
+  "projectFilePath": "C:\\Users\\Georgi Markov\\Documents\\GitHub\\Old\\CSharp-Data-Structures-Fundamentals\\Exam Preparation DSF\\2020.10.03\\01.Inventory.Tests\\01.Inventory.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Georgi Markov\\.nuget\\packages\\microsoft.codecoverage\\16.4.0\\microsoft.codecoverage.16.4.0.nupkg.sha512",
     "C:\\Users\\Georgi Markov\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",

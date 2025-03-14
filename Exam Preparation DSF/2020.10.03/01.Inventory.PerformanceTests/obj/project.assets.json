@@ -4754,11 +4754,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Georgi Markov\\Documents\\GitHub\\Old\\CSharp-Data-Structures-Fundamentals\\Exam Preparation DSF\\Exam - 03 Oct 2020\\01.Inventory.PerformanceTests\\01.Inventory.PerformanceTests.csproj",
+      "projectUniqueName": "C:\\Users\\Georgi Markov\\Documents\\GitHub\\Old\\CSharp-Data-Structures-Fundamentals\\Exam Preparation DSF\\2020.10.03\\01.Inventory.PerformanceTests\\01.Inventory.PerformanceTests.csproj",
       "projectName": "01.Inventory.PerformanceTests",
-      "projectPath": "C:\\Users\\Georgi Markov\\Documents\\GitHub\\Old\\CSharp-Data-Structures-Fundamentals\\Exam Preparation DSF\\Exam - 03 Oct 2020\\01.Inventory.PerformanceTests\\01.Inventory.PerformanceTests.csproj",
+      "projectPath": "C:\\Users\\Georgi Markov\\Documents\\GitHub\\Old\\CSharp-Data-Structures-Fundamentals\\Exam Preparation DSF\\2020.10.03\\01.Inventory.PerformanceTests\\01.Inventory.PerformanceTests.csproj",
       "packagesPath": "C:\\Users\\Georgi Markov\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Georgi Markov\\Documents\\GitHub\\Old\\CSharp-Data-Structures-Fundamentals\\Exam Preparation DSF\\Exam - 03 Oct 2020\\01.Inventory.PerformanceTests\\obj\\",
+      "outputPath": "C:\\Users\\Georgi Markov\\Documents\\GitHub\\Old\\CSharp-Data-Structures-Fundamentals\\Exam Preparation DSF\\2020.10.03\\01.Inventory.PerformanceTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4779,8 +4779,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\Georgi Markov\\Documents\\GitHub\\Old\\CSharp-Data-Structures-Fundamentals\\Exam Preparation DSF\\Exam - 03 Oct 2020\\01.Inventory\\01.Inventory.csproj": {
-              "projectPath": "C:\\Users\\Georgi Markov\\Documents\\GitHub\\Old\\CSharp-Data-Structures-Fundamentals\\Exam Preparation DSF\\Exam - 03 Oct 2020\\01.Inventory\\01.Inventory.csproj"
+            "C:\\Users\\Georgi Markov\\Documents\\GitHub\\Old\\CSharp-Data-Structures-Fundamentals\\Exam Preparation DSF\\2020.10.03\\01.Inventory\\01.Inventory.csproj": {
+              "projectPath": "C:\\Users\\Georgi Markov\\Documents\\GitHub\\Old\\CSharp-Data-Structures-Fundamentals\\Exam Preparation DSF\\2020.10.03\\01.Inventory\\01.Inventory.csproj"
             }
           }
         }
@@ -4830,7 +4830,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

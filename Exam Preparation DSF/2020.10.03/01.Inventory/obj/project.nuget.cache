@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AG+QVJpHzpc=",
+  "dgSpecHash": "tAty3OHbClw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Georgi Markov\\Documents\\GitHub\\Old\\CSharp-Data-Structures-Fundamentals\\Exam Preparation DSF\\Exam - 03 Oct 2020\\01.Inventory\\01.Inventory.csproj",
+  "projectFilePath": "C:\\Users\\Georgi Markov\\Documents\\GitHub\\Old\\CSharp-Data-Structures-Fundamentals\\Exam Preparation DSF\\2020.10.03\\01.Inventory\\01.Inventory.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Georgi Markov\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Georgi Markov\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"

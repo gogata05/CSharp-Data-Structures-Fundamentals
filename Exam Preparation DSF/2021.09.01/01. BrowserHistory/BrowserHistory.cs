@@ -2,100 +2,139 @@
 {
     using System;
     using System.Collections.Generic;
-    using System.Linq;
     using System.Text;
     using _01._BrowserHistory.Interfaces;
 
     public class BrowserHistory : IHistory
     {
-        private LinkedList<ILink> linkHistory = new LinkedList<ILink>();
+        private LinkedList<ILink> _history;
 
-        public int Size => linkHistory.Count;
+        public BrowserHistory()
+        {
+            _history = new LinkedList<ILink>();
+        }
 
-        public void Clear() => linkHistory.Clear();
+        public int Size => _history.Count;
 
-        public bool Contains(ILink link) => linkHistory.Contains(link);
+        public void Clear()
+        {
+            _history.Clear();
+        }
+
+        public bool Contains(ILink link)
+        {
+            return _history.Contains(link);
+        }
 
         public ILink DeleteFirst()
         {
-            if (linkHistory.Count == 0)
+            if (_history.Count == 0)
             {
                 throw new InvalidOperationException();
             }
 
-            var firstLink = linkHistory.Last.Value;
-            linkHistory.RemoveLast();
-
+            ILink firstLink = _history.Last.Value;
+            _history.RemoveLast();
             return firstLink;
         }
 
         public ILink DeleteLast()
         {
-            if (linkHistory.Count == 0)
+            if (_history.Count == 0)
             {
                 throw new InvalidOperationException();
             }
 
-            var lastLink = linkHistory.First.Value;
-            linkHistory.RemoveFirst();
-
+            ILink lastLink = _history.First.Value;
+            _history.RemoveFirst();
             return lastLink;
         }
 
-        public ILink GetByUrl(string url) => linkHistory.FirstOrDefault(l => l.Url == url);
+        public ILink GetByUrl(string url)
+        {
+            foreach (var link in _history)
+            {
+                if (link.Url == url)
+                {
+                    return link;
+                }
+            }
+
+            return null;
+        }
 
         public ILink LastVisited()
         {
-            if (linkHistory.Count == 0)
+            if (_history.Count == 0)
             {
                 throw new InvalidOperationException();
             }
 
-            return linkHistory.First.Value;
+            return _history.First.Value;
         }
 
-        public void Open(ILink link) => linkHistory.AddFirst(link);
+        public void Open(ILink link)
+        {
+            _history.AddFirst(link);
+        }
 
         public int RemoveLinks(string url)
         {
-            if (linkHistory.Count == 0)
+            int count = 0;
+            LinkedListNode<ILink> current = _history.First;
+
+            while (current != null)
+            {
+                LinkedListNode<ILink> next = current.Next;
+                if (current.Value.Url.IndexOf(url, StringComparison.OrdinalIgnoreCase) >= 0)
+                {
+                    _history.Remove(current);
+                    count++;
+                }
+                current = next;
+            }
+
+            if (count == 0)
             {
                 throw new InvalidOperationException();
             }
 
-            var linksToRemove = linkHistory.Where(l => l.Url.ToLower().Contains(url.ToLower())).ToArray();
-
-            if (linksToRemove.Length == 0)
-            {
-                throw new InvalidOperationException();
-            }
-
-            foreach (var link in linksToRemove)
-            {
-                linkHistory.Remove(link);
-            }
-
-            return linksToRemove.Length;
+            return count;
         }
 
-        public ILink[] ToArray() => linkHistory.ToArray();
+        public ILink[] ToArray()
+        {
+            ILink[] result = new ILink[_history.Count];
+            int index = 0;
+            foreach (var link in _history)
+            {
+                result[index++] = link;
+            }
+            return result;
+        }
 
-        public List<ILink> ToList() => linkHistory.ToList();
+        public List<ILink> ToList()
+        {
+            List<ILink> result = new List<ILink>(_history.Count);
+            foreach (var link in _history)
+            {
+                result.Add(link);
+            }
+            return result;
+        }
 
         public string ViewHistory()
         {
-            if (linkHistory.Count == 0)
+            if (_history.Count == 0)
             {
                 return "Browser history is empty!";
             }
 
-            var sb = new StringBuilder(linkHistory.Count);
-
-            foreach (var link in linkHistory)
+            StringBuilder sb = new StringBuilder();
+            foreach (var link in _history)
             {
                 sb.AppendLine(link.ToString());
             }
-
             return sb.ToString();
         }
     }

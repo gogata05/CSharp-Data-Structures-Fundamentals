@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("02.LegionSystem.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+54c1ccc5e904674dc1614e7182bffb4d899ed430")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d3bd443dbaa47c1497e83bdbd99f58bb76f173ae")]
 [assembly: System.Reflection.AssemblyProductAttribute("02.LegionSystem.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("02.LegionSystem.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
