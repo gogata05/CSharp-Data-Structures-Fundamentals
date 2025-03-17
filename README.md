@@ -2,7 +2,7 @@
  
 ### 📚SoftUni-CSharp-Data-Structures-Advanced-November-2023
 
-### 🎓 Course Link - [Here](https://softuni.bg/trainings/3921/data-structures-fundamentals-with-csharp-november-2022)
+### 🎓 Course Link - [Here](https://softuni.bg/trainings/4266/data-structures-fundamentals-with-csharp-september-2023)
 
 Welcome to the C# Data Structures repository! This repository contains implementations and examples of various data structures in C#. By exploring this repository, you'll gain valuable knowledge and skills related to data structures.
  
